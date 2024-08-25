@@ -11,12 +11,15 @@ body {
 header {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-image: url('./images/desktop/image-header.jpg');
     object-fit: cover;
     background-position: center;
     background-repeat: no-repeat;
+    flex-direction: column;
+    gap: 3em;
+    height: 900px;
 }
 
 ul li {
@@ -33,7 +36,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 70px;
 }
 
 nav .nav-links {
@@ -56,4 +59,46 @@ nav .nav-links {
 
 .hero {
     width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4.5em;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: .5em;
+}
+
+.hero img {
+    height: 200px;
+}
+
+section {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    display: flex;
+}
+
+.left {
+    width: 50%;
+    background-color: white;
+}
+
+.right {
+    width: 50%;
+    background-color: hsl(51, 100%, 49%);
+}
+
+.left2 {
+    background-color: hsl(7, 99%, 70%);
+}
+
+.right2 {
+    background-color: white;
 }
