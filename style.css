@@ -235,3 +235,84 @@ section {
 .right3 .text p {
     width: 400px;
 }
+
+.normal {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+}
+
+.test {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.test h3 {
+    text-transform: uppercase;
+    color: hsl(232, 10%, 55%);
+    font-size: 35px;
+}
+
+.test .cards {
+    display: flex;
+    gap: 1.5em;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.card p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    color: hsl(232, 10%, 55%);
+}
+
+.card img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 100px;
+}
+
+.card .auth {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.card .name {
+    font-weight: 700;
+    font-size: 30px;
+    color: black;
+}
+
+.card .title {
+    color: hsl(213, 9%, 39%);
+}
+
+.footer-cont {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+}
+
+.gallery img {
+    width: 25%;
+}
