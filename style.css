@@ -58,6 +58,10 @@ nav .nav-links {
     border-radius: 20px;
 }
 
+.have-bg:hover {
+    background-color: rgb(255, 255, 255);
+}
+
 .hero {
     width: 80%;
     display: flex;
@@ -119,7 +123,12 @@ section {
     padding: 10px 0 0 0;
     font-size: 20px;
     border-bottom: 8px solid hsl(51, 100%, 49%);
+    cursor: pointer;
     text-transform: uppercase;
+}
+
+.left button:hover {
+    padding-bottom: -5px;
 }
 
 .right {
@@ -174,6 +183,10 @@ section {
     text-transform: uppercase;
 }
 
+.right button:hover {
+    padding-bottom: -5px;
+}
+
 .left3 {
     width: 50%;
     display: flex;
@@ -198,6 +211,10 @@ section {
 
 .left3 .text {
     color: hsl(167, 40%, 24%);
+}
+
+.left3 .text h3 {
+    font-size: 28px;
 }
 
 .left3 .text p {
@@ -232,6 +249,10 @@ section {
     color: hsl(167, 40%, 24%);
 }
 
+.right3 .text h3 {
+    font-size: 28px;
+}
+
 .right3 .text p {
     width: 400px;
 }
@@ -256,7 +277,7 @@ section {
 .test h3 {
     text-transform: uppercase;
     color: hsl(232, 10%, 55%);
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .test .cards {
@@ -335,7 +356,12 @@ footer .nav-links {
 
 footer .nav-links a {
     color: hsl(167, 40%, 24%);
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+footer .nav-links a:hover {
+    color: white;
 }
 
 .logo img {
@@ -350,4 +376,56 @@ footer .nav-links a {
 
 .social-icons img {
     height: 30px;
+}
+
+.social-icons img:hover {
+    color: white;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+
+@media screen and (max-width: 420px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    header {
+        background-image: url("./images/mobile/image-header.jpg");
+        object-fit: contain;
+        background-position: center;
+    }
+
+    .hero {
+        gap: 7.5em;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .hero img {
+        height: 150px;
+    }
+
+    section {
+        flex-direction: column-reverse;
+        width: 90%;
+    }
+
+    section .left {
+        width: 100%;
+        height: 50%;
+    }
+
+    section .right {
+        width: 100%;
+        height: 50%;
+    }
+
+    section .right {
+        background-image: url("./images/mobile/image-transform.jpg");
+    }
 }
