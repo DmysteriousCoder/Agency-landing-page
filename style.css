@@ -50,6 +50,10 @@ nav .nav-links {
     font-weight: 500;
 }
 
+.ham {
+    height: 20px;
+}
+
 .have-bg {
     background-color: white;
     color: black;
@@ -385,16 +389,71 @@ footer .nav-links a:hover {
     border-radius: 50%;
 }
 
+.desktop-hide {
+    display: none;
+}
+
 
 @media screen and (max-width: 420px) {
     body {
         overflow-x: hidden;
     }
 
+    .desktop-hide {
+        display: block;
+    }
+
     header {
         background-image: url("./images/mobile/image-header.jpg");
         object-fit: contain;
         background-position: center;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav .logo img {
+        height: 30px;
+        width: 120px;
+    }
+
+    nav .nav-links {
+        display: none;
+    }
+
+    nav .nav-links.active {
+        display: flex;
+        background-color: white;
+        color: black;
+        height: 500px;
+        padding: 10px;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 0;
+        top: 120px;
+        right: 0;
+        bottom: -10px;
+        width: 100%;
+        transition: background-color 100s ease;
+        border-radius: 30px 0 30px 0;
+    }
+
+    nav .nav-links.active a {
+        font-size: 25px;
+    }
+
+    nav .nav-links.active .have-bg {
+        color: white;
+        background-color: black;
+    }
+
+    nav .nav-links.active .have-bg:hover {
+        color: black;
+        background-color: white;
     }
 
     .hero {
@@ -523,5 +582,31 @@ footer .nav-links a:hover {
         text-align: center;
         width: 90%;
         font-size: 18px;
+    }
+
+    .test {
+        width: 90%;
+        gap: 3em;
+    }
+
+    .test h3 {
+        font-size: 25px;
+    }
+
+    .test .cards {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .gallery {
+        flex-wrap: wrap;
+    }
+
+    .gallery img {
+        width: 50%;
+    }
+
+    footer {
+        width: 90;
     }
 }
